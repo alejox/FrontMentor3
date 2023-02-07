@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Dark-cyan);
+  font-family: 'Kumbh Sans', sans-serif;
+  background-image: url(images/bg-pattern-top.svg ), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
+
+
+/* -----------------Card-------------------- */
+
+.card-container {
+  width: 33rem;
+  height: 38rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.bubbles{
+  background: url(images/bg-pattern-card.svg);
+  height: 14rem;
+}
+
+.photo{
+  position: absolute;
+  top: 8.7rem;
+  left: 35%;
+  border: .5rem solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+}
+
+.personal-data-container{
+  background-color: white;
+  height: 15rem;
+  padding: 7.5rem;
+  text-align: center;
+}
+
+.name{
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.age, .city{
+  font-size: 1.8rem;
+  color: var(--Dark-gray);
+}
+
+.city{
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+
+.stats-container{
+  background-color: white;
+  border-top: 1px solid var(--Dark-gray);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 9rem;
+}
+
+.statistics{
+  text-align: center;
+}
+
+.quantity{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.units{
+  font-size: 1.2rem;
+  color: var(--Dark-gray);
+  letter-spacing: 2px;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  font-size: 1.2rem;
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+@media screen and (min-width:1440px) {
+  .card-container{
+    width: 35rem;
+  }
+}
